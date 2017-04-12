@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.chinaso.suchef.AddDishActivity">
+
+    <EditText
+        android:id="@+id/nameETv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_dish_name"
+        android:textCursorDrawable="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:id="@+id/priceETv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameETv"
+        android:hint="@string/add_dish_price"
+        android:textCursorDrawable="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:id="@+id/ingreETv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceETv"
+        android:hint="@string/add_dish_ingredient"
+        android:textCursorDrawable="@color/colorAccent"
+
+        />
+
+    <Button
+        android:id="@+id/picBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ingreETv"
+        android:layout_marginTop="19dp"
+        android:text="@string/add_dish_pic_select"
+        android:background="@drawable/btn_bg"/>
+
+    <Button
+        android:id="@+id/camBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picBtn"
+        android:text="@string/add_dish_pic_shoot"
+        android:background="@drawable/btn_bg"/>
+
+    <ImageView
+        android:id="@+id/dishImg"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/camBtn"
+        android:contentDescription="@string/img_dish" />
+
+    <Button
+        android:id="@+id/saveDishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishImg"
+        android:text="@string/save"
+        android:background="@drawable/btn_bg"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.su.chinaso.suchef.CommentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="吃客评论"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="@color/shopAccent"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/commentEtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/comment_input"
+        android:textCursorDrawable="@color/colorAccent"
+
+        />
+
+    <Button
+        android:id="@+id/saveDishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishImg"
+        android:text="@string/save"
+        android:background="@drawable/btn_bg"/>
+</LinearLayout>

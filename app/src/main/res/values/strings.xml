@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">大厨定制</string>
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+    <string name="dialog_seekbar_transition_time">Item transition time in millis</string>
+
+    <string name="btn_smooth_scroll">Smooth scroll</string>
+    <string name="btn_transition_time">Transition time</string>
+    <string name="msg_unsupported_op">Unsupported operation</string>
+
+
+    <!-- addDish-->
+    <string name="add_dish_name"> 请输入菜品名称</string>
+    <string name="add_dish_price"> 请输入菜品价格</string>
+    <string name="add_dish_comment"> 一句话点评 </string>
+    <string name="add_dish_ingredient"> 有哪些主料 </string>
+    <string name="add_dish_pic_select"> 选择照片上传</string>
+    <string name="add_dish_pic_shoot"> 拍摄照片上传</string>
+    <string name="img_dish"> 显示菜色照片</string>
+    <string name="save"> 保存</string>
+
+    <!-- content Description& Order-->
+    <string name="back"> 返回 </string>
+    <string name="comment"> 评论 </string>
+    <string name="take_order"> 确定点菜 </string>
+    <string name="cover"> 封面 </string>
+    <string name="close"> 关闭 </string>
+    <string name="confirm"> 确定 </string>
+    <string name="cancel"> 取消 </string>
+
+
+    <string name="start_take_order"> 开始点菜 </string>
+    <string name="new_dish"> 发布新菜 </string>
+
+    <!-- Menu-->
+    <string name="generate_menu"> 生成菜单 </string>
+    <string name="total_account"> 您的预计消费： </string>
+
+    <!--CommentActivity-->
+    <string name="comment_input"> 输入您的评论 </string>
+
+</resources>
