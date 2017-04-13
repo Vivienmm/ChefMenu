@@ -68,7 +68,7 @@
             android:layout_below="@+id/newDishTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="欢迎来吃饭饭！！"
+            android:text="欢迎来吃饭饭,不好吗！！"
             android:textSize="18sp"
             android:drawablePadding="20dp"/>
     </RelativeLayout>
