@@ -6,8 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.su.chinaso.suchef.SplashActivity">
 
+    <com.bilibili.magicasakura.widgets.TintToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.App.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/theme_color_primary"
+        app:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
+        android:layout_below="@id/toolbar"
         android:layout_width="292dp"
         android:layout_centerHorizontal="true"
         android:layout_height="285dp"

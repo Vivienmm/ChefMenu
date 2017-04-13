@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements DiscreteScrollVie
 
     private void onItemChanged(DishEntity item) {
         currentItemName.setText(item.getName());
-        currentItemPrice.setText(item.getPrice());
+        currentItemPrice.setText(item.getPrice()+" $RMB ");
         changeRateButtonState(item);
     }
 

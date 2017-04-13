@@ -11,14 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/theme_color_primary"
         android:id="@+id/appBar">
 
-        <android.support.v7.widget.Toolbar
+        <com.bilibili.magicasakura.widgets.TintToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:background="@color/theme_color_primary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            style="@style/Widget.App.Toolbar"/>
 
     </android.support.design.widget.AppBarLayout>
     <LinearLayout
@@ -59,12 +61,12 @@
             android:layout_width="wrap_content"
             android:layout_height="4dp" />
 
-        <TextView
+        <com.bilibili.magicasakura.widgets.TintTextView
             android:id="@+id/item_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textColor="@color/shopAccent"
+            android:textColor="@color/selector_text"
             android:textStyle="bold"
             tools:text="$24.00 USD" />
 

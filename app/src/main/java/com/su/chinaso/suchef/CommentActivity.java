@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -24,6 +25,8 @@ import butterknife.OnClick;
 
 public class CommentActivity extends AppCompatActivity {
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.commentEtv)
     EditText commentEtv;
     @BindView(R.id.saveDishBtn)
@@ -39,7 +42,8 @@ public class CommentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
         ButterKnife.bind(this);
-
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
         initIntent();
 
         initView();

@@ -12,12 +12,13 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.su.chinaso.suchef.dish.DishManageDao;
+import com.su.chinaso.suchef.widgets.KeyEditText;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -38,13 +39,15 @@ public class AddDishActivity extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST_CAMERA = 1;
     @BindView(R.id.nameETv)
-    EditText nameETv;
+    KeyEditText nameETv;
     @BindView(R.id.priceETv)
-    EditText priceETv;
+    KeyEditText priceETv;
     @BindView(R.id.ingreETv)
-    EditText ingreETv;
+    KeyEditText ingreETv;
     @BindView(R.id.saveDishBtn)
     Button saveDishBtn;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     private String dateName;
     private String filePath;
 
@@ -52,7 +55,10 @@ public class AddDishActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_dish);
+
         ButterKnife.bind(this);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
         checkCameraPermision();
     }
 

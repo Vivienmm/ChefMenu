@@ -1,16 +1,16 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+   <!-- <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-    <style name="AppTheme.NoActionBar">
+    </style>-->
+   <!-- <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-    </style>
+    </style>-->
 
     <style name="ClickableImageView">
         <item name="android:clickable">true</item>
@@ -35,4 +35,16 @@
         <item name="android:backgroundDimEnabled">false</item><!--模糊-->
     </style>
 
+    <style name="Widget.App.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/gray_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
 </resources>

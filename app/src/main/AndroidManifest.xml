@@ -22,8 +22,12 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SplashActivity"></activity>
-        <activity android:name=".AddDishActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AddDishActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MeituActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -38,7 +42,9 @@
             android:name="com.su.chinaso.suchef.view.GlideConfiguration"
             android:value="GlideModule" />
 
-        <activity android:name=".CommentActivity"></activity>
+        <activity
+            android:name=".CommentActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

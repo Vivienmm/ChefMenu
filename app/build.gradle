@@ -93,4 +93,6 @@ dependencies {
     compile 'org.jsoup:jsoup:1.10.2'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    compile 'com.bilibili:magicasakura:0.1.5@aar'
 }

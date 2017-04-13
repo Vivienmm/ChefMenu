@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="4dp" />
+            <padding android:bottom="@dimen/padding_half" android:left="@dimen/padding_half" android:right="@dimen/padding_half" android:top="@dimen/padding_half" />
+            <solid android:alpha="0.3" android:color="@color/theme_color_primary" />
+            <stroke android:width="3dp" android:color="@color/white"/>
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="4dp" />
+            <padding android:bottom="@dimen/padding_half" android:left="@dimen/padding_half" android:right="@dimen/padding_half" android:top="@dimen/padding_half" />
+            <solid android:color="@color/theme_color_primary_dark" />
+            <stroke android:width="3dp" android:color="@color/white"/>
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+            <padding android:bottom="@dimen/padding_half" android:left="@dimen/padding_half" android:right="@dimen/padding_half" android:top="@dimen/padding_half" />
+            <solid android:color="@color/theme_color_primary" />
+            <stroke android:width="3dp" android:color="@color/white"/>
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector>
